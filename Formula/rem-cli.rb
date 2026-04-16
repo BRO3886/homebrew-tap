@@ -10,7 +10,11 @@ class RemCli < Formula
   conflicts_with "rem", because: "both install a `rem` binary"
 
   def install
-    ldflags = "-s -w -X main.version=#{version}"
+    ldflags = %W[
+      -s -w
+      -X main.version=#{version}
+      -X main.buildTime=#{time.iso8601}
+    ]
     system "go", "build", *std_go_args(output: bin/"rem", ldflags:), "./cmd/rem"
   end
 
