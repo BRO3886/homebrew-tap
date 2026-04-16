@@ -7,11 +7,10 @@ class Healthsync < Formula
   depends_on "go" => :build
 
   def install
-    commit = Utils.git_short_head(length: 7) || "brew"
     ldflags = %W[
       -s -w
       -X main.version=#{version}
-      -X main.commit=#{commit}
+      -X main.commit=brew
       -X main.date=#{time.iso8601}
     ]
     system "go", "build", *std_go_args(ldflags:), "."
