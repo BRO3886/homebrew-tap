@@ -13,6 +13,6 @@ class Rem < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/rem --version")
+    assert_match version.to_s, shell_output("#{bin}/rem version")
   end
 end
