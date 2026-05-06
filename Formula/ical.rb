@@ -1,19 +1,19 @@
 class Ical < Formula
   desc "Fast, native macOS Calendar CLI built on go-eventkit"
   homepage "https://github.com/BRO3886/ical"
-  version "0.10.0"
+  version "0.10.1"
   license "MIT"
 
   depends_on :macos
 
   on_arm do
-    url "https://github.com/BRO3886/ical/releases/download/v0.10.0/ical-darwin-arm64.tar.gz"
-    sha256 "7374bcecc5f402a93e59195fa395cab4f5695160e7c08649636e95ea7eb8fc8b"
+    url "https://github.com/BRO3886/ical/releases/download/v0.10.1/ical-darwin-arm64.tar.gz"
+    sha256 "dfa0154a71949daf2fd4298b3fdabaa0bd3a374c63bc1743adb3a1b535590b44"
   end
 
   on_intel do
-    url "https://github.com/BRO3886/ical/releases/download/v0.10.0/ical-darwin-amd64.tar.gz"
-    sha256 "2e7bef807c19505b4971f13ec8a5d79bfd12679695d8e81ebda16a57b78330c7"
+    url "https://github.com/BRO3886/ical/releases/download/v0.10.1/ical-darwin-amd64.tar.gz"
+    sha256 "71518f798637a53a05bd7e9ffa55419eeda3779cf7076fe24b5b3ea2345cf2dc"
   end
 
   def install
