@@ -1,30 +1,30 @@
 class Healthsync < Formula
   desc "Parse Apple Health exports into a local SQLite database for AI agents and CLI queries"
   homepage "https://github.com/BRO3886/healthsync"
-  version "0.5.3"
+  version "0.5.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.3/healthsync-darwin-arm64.tar.gz"
-      sha256 "c35604c23da16c82f8e987837f4c34d7c43c671bc5c18752ee4d8d49adfc6e73"
+      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.4/healthsync-darwin-arm64.tar.gz"
+      sha256 "8ada9ab565fd53fc629e951dd97f92e5575b1c40a79fbd4b67828e2ab77f6005"
     end
 
     on_intel do
-      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.3/healthsync-darwin-amd64.tar.gz"
-      sha256 "2c9ec5e636e54f71eaceea57f6b85a051398804454126718092166b0553cce9f"
+      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.4/healthsync-darwin-amd64.tar.gz"
+      sha256 "bcddbb806cd4ec399d6a29f6aa3b4905a95f7038a6ca4c0807f028c53d354ef9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.3/healthsync-linux-arm64.tar.gz"
-      sha256 "4628298539e208c302fe12bbddf2e19e8bb733732a2b2befe9e412914dbf9751"
+      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.4/healthsync-linux-arm64.tar.gz"
+      sha256 "8afaf3850b68ec37d5a777561d917004bd279e03dc6bf370d833025d40273a12"
     end
 
     on_intel do
-      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.3/healthsync-linux-amd64.tar.gz"
-      sha256 "62c0dad606166ffdd0b8290ece968f064e3a8b3a8750da437d8bb71942c007f4"
+      url "https://github.com/BRO3886/healthsync/releases/download/v0.5.4/healthsync-linux-amd64.tar.gz"
+      sha256 "7a3d5203f02bab22cb97bf5d9f32a0651af7424b3959b59b120847298491b695"
     end
   end
 
